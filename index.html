@@ -1,193 +1,193 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-  <meta charset="UTF-8">
-  <title>Menu - M. Mustafaj</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #2e7d32;
-      color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
-    .lang-toggle {
-      font-size: 1em;
-    }
-    .lang-toggle button {
-      margin-left: 10px;
-      padding: 6px 12px;
-      border: none;
-      border-radius: 5px;
-      background: white;
-      color: #2e7d32;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .menu-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-    }
-    .card h2 {
-      border-bottom: 2px solid #2e7d32;
-      color: #2e7d32;
-      margin-top: 0;
-      font-size: 1.2em;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      display: flex;
-      justify-content: space-between;
-      padding: 5px 0;
-    }
-    .hidden {
-      display: none;
-    }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Menu - M. Mustafaj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .lang-toggle {
+            font-size: 1em;
+        }
+        .lang-toggle button {
+            margin-left: 10px;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            background: white;
+            color: #2e7d32;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .menu-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .card h2 {
+            border-bottom: 2px solid #2e7d32;
+            color: #2e7d32;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1 id="title">Menu - M. Mustafaj</h1>
-  <div class="lang-toggle">
-    <span>Zgjidh Gjuhën / Choose Language:</span>
-    <button onclick="switchLang('sq')">Shqip</button>
-    <button onclick="switchLang('en')">English</button>
-  </div>
+    <h1 id="title">Menu - M. Mustafaj</h1>
+    <div class="lang-toggle">
+        <span>Zgjidh Gjuhën / Choose Language:</span>
+        <button onclick="switchLang('sq')">Shqip</button>
+        <button onclick="switchLang('en')">English</button>
+    </div>
 </header>
 
 <div class="menu-section">
 
-  <!-- Kafeteria -->
-  <div class="card">
-    <h2 data-sq="Kafeteria" data-en="Cafeteria">Kafeteria</h2>
-    <ul>
-      <li><span>Kafe / Espresso</span><span>80</span></li>
-      <li><span>Makjato / Macchiato</span><span>100</span></li>
-      <li><span>Kakao / Cocoa</span><span>100</span></li>
-      <li><span>Kapuçino / Cappuccino</span><span>150</span></li>
-      <li><span>Neskafe / Nescafe</span><span>200</span></li>
-    </ul>
-  </div>
+    <!-- Kafeteria -->
+    <div class="card">
+        <h2 data-sq="Kafeteria" data-en="Cafeteria">Kafeteria</h2>
+        <ul>
+            <li><span>Kafe / Espresso</span><span>80</span></li>
+            <li><span>Makjato / Macchiato</span><span>100</span></li>
+            <li><span>Kakao / Cocoa</span><span>100</span></li>
+            <li><span>Kapuçino / Cappuccino</span><span>150</span></li>
+            <li><span>Neskafe / Nescafe</span><span>200</span></li>
+        </ul>
+    </div>
 
-  <!-- Freskuese -->
-  <div class="card">
-    <h2 data-sq="Freskuese" data-en="Cold Drinks">Freskuese</h2>
-    <ul>
-      <li><span>Coca Cola, Fanta, Sprite</span><span>150</span></li>
-      <li><span>Orange/Lemon Soda, Çaj i ftohtë</span><span>150</span></li>
-      <li><span>Amita, Bravo</span><span>150-200</span></li>
-      <li><span>Ujë / Water</span><span>60</span></li>
-      <li><span>Dhallë (karton) / Buttermilk</span><span>100</span></li>
-      <li><span>Red Bull</span><span>300</span></li>
-    </ul>
-  </div>
+    <!-- Freskuese -->
+    <div class="card">
+        <h2 data-sq="Freskuese" data-en="Cold Drinks">Freskuese</h2>
+        <ul>
+            <li><span>Coca Cola, Fanta, Sprite</span><span>150</span></li>
+            <li><span>Orange/Lemon Soda, Çaj i ftohtë</span><span>150</span></li>
+            <li><span>Amita, Bravo</span><span>150-200</span></li>
+            <li><span>Ujë / Water</span><span>60</span></li>
+            <li><span>Dhallë (karton) / Buttermilk</span><span>100</span></li>
+            <li><span>Red Bull</span><span>300</span></li>
+        </ul>
+    </div>
 
-  <!-- Aperitiv -->
-  <div class="card">
-    <h2>Aperitiv / Aperitif</h2>
-    <ul>
-      <li><span>Zhveps, B52</span><span>150</span></li>
-    </ul>
-  </div>
+    <!-- Aperitiv -->
+    <div class="card">
+        <h2>Aperitiv / Aperitif</h2>
+        <ul>
+            <li><span>Zhveps, B52</span><span>150</span></li>
+        </ul>
+    </div>
 
-  <!-- Birra -->
-  <div class="card">
-    <h2 data-sq="Birra" data-en="Beers">Birra</h2>
-    <ul>
-      <li><span>Tirana, Elbar</span><span>200</span></li>
-      <li><span>Korça, Peroni</span><span>250</span></li>
-      <li><span>Heineken, Corona</span><span>300</span></li>
-      <li><span>Kriko e vogël / Small mug</span><span>200</span></li>
-      <li><span>Kriko e madhe / Large mug</span><span>350</span></li>
-    </ul>
-  </div>
+    <!-- Birra -->
+    <div class="card">
+        <h2 data-sq="Birra" data-en="Beers">Birra</h2>
+        <ul>
+            <li><span>Tirana, Elbar</span><span>200</span></li>
+            <li><span>Korça, Peroni</span><span>250</span></li>
+            <li><span>Heineken, Corona</span><span>300</span></li>
+            <li><span>Kriko e vogël / Small mug</span><span>200</span></li>
+            <li><span>Kriko e madhe / Large mug</span><span>350</span></li>
+        </ul>
+    </div>
 
-  <!-- Sallatat -->
-  <div class="card">
-    <h2 data-sq="Sallatat" data-en="Salads">Sallatat</h2>
-    <ul>
-      <li><span>Sallatë Greke / Greek salad</span><span>250</span></li>
-      <li><span>Sallatë Jeshile / Green salad</span><span>150</span></li>
-      <li><span>Sallatë domate / Tomato salad</span><span>150</span></li>
-      <li><span>Patate / Fries</span><span>150</span></li>
-      <li><span>Xaxiqi / Tzatziki</span><span>150</span></li>
-    </ul>
-  </div>
+    <!-- Sallatat -->
+    <div class="card">
+        <h2 data-sq="Sallatat" data-en="Salads">Sallatat</h2>
+        <ul>
+            <li><span>Sallatë Greke / Greek salad</span><span>250</span></li>
+            <li><span>Sallatë Jeshile / Green salad</span><span>150</span></li>
+            <li><span>Sallatë domate / Tomato salad</span><span>150</span></li>
+            <li><span>Patate / Fries</span><span>150</span></li>
+            <li><span>Xaxiqi / Tzatziki</span><span>150</span></li>
+        </ul>
+    </div>
 
-  <!-- Fast Food -->
-  <div class="card">
-    <h2>Fast Food</h2>
-    <ul>
-      <li><span>Sufllaqe (derri/pule) / Pork/Chicken wrap</span><span>250</span></li>
-      <li><span>Sufllaqe (pjatë vogël) / Small plate</span><span>300</span></li>
-      <li><span>Sufllaqe (pjatë madhe) / Large plate</span><span>400</span></li>
-      <li><span>Sanduiç me mish / Meat sandwich</span><span>250</span></li>
-      <li><span>Hot Dog</span><span>250</span></li>
-      <li><span>Sanduiç djath/proshutë / Cheese/Ham</span><span>250</span></li>
-      <li><span>Tost / Toast</span><span>150</span></li>
-    </ul>
-  </div>
+    <!-- Fast Food -->
+    <div class="card">
+        <h2>Fast Food</h2>
+        <ul>
+            <li><span>Sufllaqe (derri/pule) / Pork/Chicken wrap</span><span>250</span></li>
+            <li><span>Sufllaqe (pjatë vogël) / Small plate</span><span>300</span></li>
+            <li><span>Sufllaqe (pjatë madhe) / Large plate</span><span>400</span></li>
+            <li><span>Sanduiç me mish / Meat sandwich</span><span>250</span></li>
+            <li><span>Hot Dog</span><span>250</span></li>
+            <li><span>Sanduiç djath/proshutë / Cheese/Ham</span><span>250</span></li>
+            <li><span>Tost / Toast</span><span>150</span></li>
+        </ul>
+    </div>
 
-  <!-- Pizza -->
-  <div class="card">
-    <h2>Pizza</h2>
-    <ul>
-      <li><span>Margarita</span><span>350</span></li>
-      <li><span>Vegetariane / Vegetarian</span><span>450</span></li>
-      <li><span>Tostino</span><span>400</span></li>
-      <li><span>4 Djathrat / 4 Cheeses</span><span>500</span></li>
-      <li><span>Kapricioza / Capricciosa</span><span>500</span></li>
-      <li><span>Proshutë & Kërpudha / Ham & Mushrooms</span><span>450</span></li>
-      <li><span>Fruta deti / Seafood</span><span>650</span></li>
-      <li><span>Balkon (Djath, Bejkon)</span><span>500</span></li>
-      <li><span>Musafah (Kackavall, Mish, Patate)</span><span>500</span></li>
-    </ul>
-  </div>
+    <!-- Pizza -->
+    <div class="card">
+        <h2>Pizza</h2>
+        <ul>
+            <li><span>Margarita</span><span>350</span></li>
+            <li><span>Vegetariane / Vegetarian</span><span>450</span></li>
+            <li><span>Tostino</span><span>400</span></li>
+            <li><span>4 Djathrat / 4 Cheeses</span><span>500</span></li>
+            <li><span>Kapricioza / Capricciosa</span><span>500</span></li>
+            <li><span>Proshutë & Kërpudha / Ham & Mushrooms</span><span>450</span></li>
+            <li><span>Fruta deti / Seafood</span><span>650</span></li>
+            <li><span>Balkon (Djath, Bejkon)</span><span>500</span></li>
+            <li><span>Musafah (Kackavall, Mish, Patate)</span><span>500</span></li>
+        </ul>
+    </div>
 
 </div>
 
 <script>
-  function switchLang(lang) {
-    const elements = document.querySelectorAll("[data-sq]");
-    elements.forEach(el => {
-      el.textContent = el.dataset[lang];
-    });
-    document.getElementById("title").textContent =
-      lang === "en" ? "Menu - M. Mustafaj" : "Menu - M. Mustafaj";
-  }
+    function switchLang(lang) {
+        const elements = document.querySelectorAll("[data-sq]");
+        elements.forEach(el => {
+            el.textContent = el.dataset[lang];
+        });
+        document.getElementById("title").textContent =
+            lang === "en" ? "Menu - M. Mustafaj" : "Menu - M. Mustafaj";
+    }
 </script>
 
 </body>
