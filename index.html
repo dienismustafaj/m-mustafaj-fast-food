@@ -1,177 +1,156 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Zgjidh Gjuha / Choose Language</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; background: #f2f2f2; padding: 50px; }
-    h1 { font-size: 2em; margin-bottom: 40px; }
-    button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 30px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      margin: 10px;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-    button:hover { background-color: #45a049; }
-  </style>
-  <script>
-    function redirect(lang) {
-      if (lang === 'sq') window.location.href = 'menu_sq.html';
-      else if (lang === 'en') window.location.href = 'menu_en.html';
-    }
-  </script>
-</head>
-<body>
-  <h1>Zgjidhni Gjuhën / Choose Language</h1>
-  <button onclick="redirect('sq')">Shqip</button>
-  <button onclick="redirect('en')">English</button>
-</body>
-</html>
-
-<!-- menu_sq.html -->
 <!DOCTYPE html>
 <html lang="sq">
 <head>
   <meta charset="UTF-8">
   <title>Menu - M. Mustafaj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: sans-serif; background: #f9f9f9; padding: 30px; max-width: 700px; margin: auto; }
-    h1, h2 { color: #2c3e50; }
-    ul { list-style: none; padding-left: 0; }
-    li { padding: 5px 0; border-bottom: 1px solid #ddd; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    .menu-section {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 10px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .card h2 {
+      color: #2e7d32;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    li::after {
+      content: '..................................................................................';
+      flex: 1;
+      margin: 0 10px;
+      color: #ccc;
+    }
+    span {
+      white-space: nowrap;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Meny - M. Mustafaj</h1>
-  <h2>Kafeteria</h2>
-  <ul>
-    <li>Kafe - 80</li>
-    <li>Kakao - 100</li>
-    <li>Kapuçino - 150</li>
-    <li>Neskafe - 200</li>
-  </ul>
-  <h2>Freskuese</h2>
-  <ul>
-    <li>Coca Cola, Sprite, Fanta - 150</li>
-    <li>Orange Soda, Lemon Soda, Çaj i ftohtë, Çaj limoni, Anita - 150</li>
-    <li>Ujë - 60</li>
-    <li>Red Bull - 200</li>
-    <li>Dhallë (karton) - 100</li>
-  </ul>
-  <h2>Aperitiv</h2>
-  <ul><li>Zhveps, BSZ - 150</li></ul>
-  <h2>Birra</h2>
-  <ul>
-    <li>Tirana, Elbar - 150</li>
-    <li>Korça - 200</li>
-    <li>Heineken, Corona - 250</li>
-    <li>Kriko e vogël - 200</li>
-    <li>Kriko e madhe - 350</li>
-  </ul>
-  <h2>Sallatat</h2>
-  <ul>
-    <li>Sallatë Greke - 250</li>
-    <li>Sallatë Domate - 150</li>
-    <li>Sallatë përzier - 250</li>
-    <li>Patate - 150</li>
-    <li>Patate + djathë - 200</li>
-  </ul>
-  <h2>Fast Food</h2>
-  <ul>
-    <li>Suxhuk, salsiçe, proshutë - 300</li>
-    <li>Tost - 150</li>
-    <li>Sanduiç i vogël / i madh - 200 / 300</li>
-    <li>Sanduiç me mish / djathë - 300</li>
-  </ul>
-  <h2>Pica</h2>
-  <ul>
-    <li>Margarita - 350</li>
-    <li>Vegetariana - 450</li>
-    <li>Tostino - 400</li>
-    <li>4 Stinët - 500</li>
-    <li>Me sallam pikant - 500</li>
-    <li>Me proshutë - 450</li>
-    <li>Me fruta deti - 650</li>
-    <li>Balkon - 500</li>
-    <li>Musafah - 500</li>
-  </ul>
-</body>
-</html>
 
-<!-- menu_en.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Menu - M. Mustafaj</title>
-  <style>
-    body { font-family: sans-serif; background: #f9f9f9; padding: 30px; max-width: 700px; margin: auto; }
-    h1, h2 { color: #2c3e50; }
-    ul { list-style: none; padding-left: 0; }
-    li { padding: 5px 0; border-bottom: 1px solid #ddd; }
-  </style>
-</head>
-<body>
-  <h1>Menu - M. Mustafaj</h1>
-  <h2>Cafeteria</h2>
-  <ul>
-    <li>Espresso - 80</li>
-    <li>Cocoa - 100</li>
-    <li>Cappuccino - 150</li>
-    <li>Nescafe - 200</li>
-  </ul>
-  <h2>Soft Drinks</h2>
-  <ul>
-    <li>Coca Cola, Sprite, Fanta - 150</li>
-    <li>Orange Soda, Lemon Soda, Ice Tea, Lemon Tea, Anita - 150</li>
-    <li>Water - 60</li>
-    <li>Red Bull - 200</li>
-    <li>Buttermilk (carton) - 100</li>
-  </ul>
-  <h2>Aperitif</h2>
-  <ul><li>Zhveps, BSZ - 150</li></ul>
-  <h2>Beers</h2>
-  <ul>
-    <li>Tirana, Elbar - 150</li>
-    <li>Korça - 200</li>
-    <li>Heineken, Corona - 250</li>
-    <li>Small mug - 200</li>
-    <li>Large mug - 350</li>
-  </ul>
-  <h2>Salads</h2>
-  <ul>
-    <li>Greek Salad - 250</li>
-    <li>Tomato Salad - 150</li>
-    <li>Mixed Salad - 250</li>
-    <li>Fries - 150</li>
-    <li>Fries with Cheese - 200</li>
-  </ul>
-  <h2>Fast Food</h2>
-  <ul>
-    <li>Sujuk, Sausage, Ham - 300</li>
-    <li>Toast - 150</li>
-    <li>Small / Large Sandwich - 200 / 300</li>
-    <li>Sandwich with meat / cheese - 300</li>
-  </ul>
-  <h2>Pizza</h2>
-  <ul>
-    <li>Margherita - 350</li>
-    <li>Vegetarian - 450</li>
-    <li>Tostino - 400</li>
-    <li>4 Seasons - 500</li>
-    <li>Spicy Salami - 500</li>
-    <li>Ham - 450</li>
-    <li>Seafood - 650</li>
-    <li>Balkon - 500</li>
-    <li>Musafah - 500</li>
-  </ul>
+<header>Menu - M. Mustafaj</header>
+
+<div class="menu-section">
+
+  <div class="card">
+    <h2>Kafeteria</h2>
+    <ul>
+      <li>Kafe <span>80</span></li>
+      <li>Makjato <span>100</span></li>
+      <li>Kakao <span>100</span></li>
+      <li>Kapuçino <span>150</span></li>
+      <li>Neskafe <span>200</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Freskuese</h2>
+    <ul>
+      <li>Coca Cola, Fanta, Sprite <span>150</span></li>
+      <li>Orange/Lemon Soda, Çaj pjeshke/limoni <span>150</span></li>
+      <li>Amita, Bravo <span>150-200</span></li>
+      <li>Ujë <span>60</span></li>
+      <li>Dhallë (karton) <span>100</span></li>
+      <li>Red Bull <span>300</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Aperitiv</h2>
+    <ul>
+      <li>Zhveps, B52 <span>150</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Birra</h2>
+    <ul>
+      <li>Tirana, Elbar <span>200</span></li>
+      <li>Korça, Peroni <span>250</span></li>
+      <li>Heineken, Corona <span>300</span></li>
+      <li>Kriko e vogël <span>200</span></li>
+      <li>Kriko e madhe <span>350</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Sallatat</h2>
+    <ul>
+      <li>Sallatë Greke <span>250</span></li>
+      <li>Sallatë Jeshile <span>150</span></li>
+      <li>Sallatë Domate <span>150</span></li>
+      <li>Patate, Xaxiqi <span>150</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Fast Food</h2>
+    <ul>
+      <li>Sufllaqe (derri/pule) <span>250</span></li>
+      <li>Sufllaqe (pjatë e vogël) <span>300</span></li>
+      <li>Sufllaqe (pjatë e madhe) <span>400</span></li>
+      <li>Sanduiç me mish <span>250</span></li>
+      <li>Hot Dog <span>250</span></li>
+      <li>Sanduiç (djath/proshutë) <span>250</span></li>
+      <li>Tost <span>150</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Pizza</h2>
+    <ul>
+      <li>Margarita <span>350</span></li>
+      <li>Vegetariane <span>450</span></li>
+      <li>Tostino <span>400</span></li>
+      <li>4 Djathrat <span>500</span></li>
+      <li>Kapricioza <span>500</span></li>
+      <li>Proshutë & Kërpudha <span>450</span></li>
+      <li>Fruta Deti <span>650</span></li>
+      <li>Balkon <span>500</span></li>
+      <li>Musafah <span>500</span></li>
+    </ul>
+  </div>
+
+</div>
+
 </body>
 </html>
